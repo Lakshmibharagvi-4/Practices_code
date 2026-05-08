@@ -1,0 +1,16 @@
+import random
+print("Number guessing Game")
+while True:
+    number = random.randint(1,10)
+    print("\n Iam thinking of a number between 1 and 10")
+    while True:
+        guess = int(input("Enter You guess:"))
+        if guess == number:
+            print("Correct! You guessing it right")
+            break
+        else:
+            print("Wrong guess,try again")
+        again = input("Do you want to play again?(yes/no)").lower()
+        if again == "no":
+            print("Game Ended")
+            break
